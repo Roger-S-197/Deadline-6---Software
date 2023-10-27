@@ -1,0 +1,382 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+}
+
+.center{
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    background-color: rgb(30, 30, 30);
+}
+
+header {
+    background-color: rgb(30, 30, 30);
+    padding: 20px 0px;
+    border-bottom: 1px solid #070;
+    width: 100%;
+}
+
+.menu{
+    width: 100%;
+    max-width: 980px;
+    text-align: right;
+    display: inline;
+}
+
+.menu a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 50px;
+    transition: 0.7s;
+    display: inline-block;
+    padding: 35px 20px;
+    font-family: 'Play', sans-serif;
+}
+
+.menu a:hover{
+    color: azure;
+    background-color: #070;
+    font-size: 16px;
+}
+
+.foto {
+    padding: 2px 135px;
+    background-color: white;
+}
+
+.quadro {
+    margin-top: 20px;
+    max-width: 60%;
+}
+
+.quadro h2 {
+    text-align: center;
+    color: green;
+}
+
+.quadro p {
+    text-align: center;
+}
+
+.horarios{
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+}
+
+.horarios h2 {
+    color: green;
+}
+
+.horarios h3{
+    color: green;
+}
+
+.horarios p{
+    color: black;
+}
+
+.servicos{
+    display: grid;
+    max-width: 80%;
+    text-align: center;
+}
+
+.servicos h1{
+    text-align: center;
+    color: darkgreen;
+    font-style: none;
+    font-size: 26px;
+}
+
+.planos{
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    max-width: 88%;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 100%;
+}
+
+.servicos p{
+    text-align: center;
+    padding: 20px 0px;
+    max-width: 80%;
+    color: black;
+}
+
+.imagens{
+    justify-content: center;
+}
+
+.frase{
+    max-width: 75%;
+    padding-top: 20px;
+    text-align: center;
+    color: green;
+    font-size: 22px;
+    font-family: 'Play', sans-serif;
+}
+
+.frase h3{
+    padding-bottom: 8px;
+}
+
+.ifood{
+    justify-content: right;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ifood img{
+    justify-content: center;
+    margin-top: 15px;
+    width: 100px;
+}
+
+.ifood h2{
+    font-family: 'Play', sans-serif;
+}
+
+.contato{
+    justify-content: left;
+    text-decoration: none;
+}
+
+.contato h2{
+    color: #fff;
+    margin-left: 20px;
+    font-family: 'Play', sans-serif;
+}
+
+.contato a{
+    color: #fff;
+    transition: 0.7s;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Play', sans-serif;
+}
+
+.contato a:hover{
+    color: #070;
+    font-size: 22px;
+}
+
+footer{
+    display: flex;
+    padding: 45px;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    border-top: 1px solid #070;
+}
+
+.comunidade{
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.comunidade h1{
+    color: #007;
+}
+
+.form{
+    text-align: center;
+    color: #007;
+    margin-top: 22px;
+    margin-bottom: 15px;
+}
+
+#slider {
+    position: relative;
+    width: 50%;
+    height: 32vw;
+    margin-top: 8px;
+    margin-bottom: 80px;
+    font-family: 'Helvetica Neue', sans-serif;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+}
+  
+input[type=radio] {
+    position: relative;
+    top: 108%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin: 0 15px 0 0;
+    opacity: 0.4;
+    transform: translateX(-83px);
+    cursor: pointer;
+}
+  
+  
+input[type=radio]:nth-child(5) {
+    margin-right: 0px;
+}
+  
+input[type=radio]:checked {
+    opacity: 1;
+}
+
+#slider label,
+#slider label img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 400ms ease;
+}
+  
+  /* tela */
+  #s1:checked ~ #slide1,
+   #s2:checked ~ #slide2,
+    #s3:checked ~ #slide3,
+     #s4:checked ~ #slide4,
+      #s5:checked ~ #slide5 {
+    box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+    transform: translate3d(0%, 0, 0px);
+}
+  
+  /* proximo */
+  #s1:checked ~ #slide2,
+   #s2:checked ~ #slide3,
+    #s3:checked ~ #slide4,
+     #s4:checked ~ #slide5,
+      #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(20%, 0, -100px);
+}
+  
+  
+  /* proximo 2 */
+  #s1:checked ~ #slide3,
+   #s2:checked ~ #slide4,
+    #s3:checked ~ #slide5,
+     #s4:checked ~ #slide1,
+      #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(40%, 0, -250px);
+}
+  
+  /* anterior */
+  #s1:checked ~ #slide4,
+   #s2:checked ~ #slide5,
+    #s3:checked ~ #slide1,
+     #s4:checked ~ #slide2,
+      #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+    transform: translate3d(-40%, 0, -250px);
+}
+  
+  /* anterior 2 */
+  #s1:checked ~ #slide5,
+   #s2:checked ~ #slide1,
+    #s3:checked ~ #slide2,
+     #s4:checked ~ #slide3,
+      #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+    transform: translate3d(-20%, 0, -100px);
+}
+
+.final{
+    display: flex;
+    max-width: 100%;
+}
+
+.countdown{
+    display: inline;
+    overflow: hidden;
+    border-radius: 3px;
+    width: 15%;
+    transition: 0.7s;
+    cursor: pointer;
+    width: 600px;
+}
+
+.countdown:hover{
+    width: 100%;
+}
+
+@media screen and (max-width: 785px) {
+    .center{
+        margin-bottom: 20px;
+        width: 100%;
+        display: inline-table;
+        padding-top: 5px;
+        padding-left: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .center{
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+    .imagens{
+        display: none;
+    }
+
+    footer{
+        width: 100%;
+        display: grid;
+    }
+
+    .contato{
+        width: 100%;
+        float: top;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .contato h2{
+        padding: 0;
+        margin: 0;
+    }
+
+    .ifood{
+        border-top: 1px solid green;
+        width: 100%;
+        padding-top: 15px;
+        float: bottom;
+    }
+}
